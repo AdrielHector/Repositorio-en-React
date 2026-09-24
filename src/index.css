@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid #222;
+}
+
+header h2 {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+header h2 span {
+    color: #6c63ff;
+}
+
+header h3 {
+    font-size: 0.85rem;
+    color: #aaa;
+    font-weight: 400;
+}
+
+header p {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #6c63ff;
+}
+
+/* ---------- Main (estilos comunes a las secciones) ---------- */
+
+main {
+    padding-top: 100px;
+}
+
+main section {
+    padding: 70px 10%;
+}
+
+main section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+main section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #6c63ff;
+    margin-top: 8px;
+}
+
+/* ---------- Hero (#inicio) ---------- */
+
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    min-height: 90vh;
+}
+
+#inicio h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    font-size: 1.1rem;
+    color: #aaa;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+#inicio a {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #6c63ff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.3s;
+}
+
+#inicio a:hover {
+    background-color: #574fd6;
+}
+
+#inicio img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #6c63ff;
+}
+
+/* ---------- Experiencia (#experiencia) ---------- */
+
+#experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-left: 2px solid #6c63ff;
+    padding-left: 40px;
+}
+
+#experiencia h2 {
+    margin-left: -30px;
+}
+
+#experiencia div {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+#experiencia div::before {
+    content: '';
+    position: absolute;
+    left: -48px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: #6c63ff;
+    border-radius: 50%;
+}
+
+#experiencia h4 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+#experiencia p:first-of-type {
+    font-size: 0.8rem;
+    color: #6c63ff;
+    margin-bottom: 6px;
+}
+
+#experiencia p:last-of-type {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* ---------- Proyectos (#proyectos) ---------- */
+
+#proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    align-items: start;
+}
+
+#proyectos h2 {
+    grid-column: 1 / -1;
+}
+
+#proyectos div {
+    background: #1a1a1a;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 25px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+#proyectos div:hover {
+    transform: translateY(-5px);
+    border-color: #6c63ff;
+}
+
+#proyectos h4 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+#proyectos p {
+    color: #aaa;
+    font-size: 0.88rem;
+}
+
+/* Botón "Ver más / Ver menos" de cada proyecto */
+
+#proyectos button {
+    margin-top: 12px;
+    padding: 8px 18px;
+    background-color: transparent;
+    color: #6c63ff;
+    border: 1px solid #6c63ff;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#proyectos button:hover {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #444;
+    font-size: 0.85rem;
+    border-top: 1px solid #1a1a1a;
+}
