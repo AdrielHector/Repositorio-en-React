@@ -2,6 +2,7 @@ nombre : Adriel Hector Medina
 comision 5
 
 Este es mi Repositorio en react, no use bootstrap porque ya tenia un repositorio viejo en js agregue el ver mas y adapte a react mi repositorio viejo, utilize claude para que me ayude con el css 
+la seccion de mi no la puse, pero agregue una breve descripcion y mi experiencia laboral
 
 tecnologias utilizadas:
 

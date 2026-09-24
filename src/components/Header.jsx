@@ -9,10 +9,10 @@ const Header = ({ nombre, apellido, profesion, especializacion }) => {
         <p>{especializacion}</p>
       </div>
       <ul>
-        <li><a href="#inicio">inicio</a></li>
-        <li><a href="#experiencia">experiencia</a></li>
-        <li><a href="#proyectos">proyectos</a></li>
-        <li><a href="#habilidades">habilidades</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
       </ul>
     </header>
   );

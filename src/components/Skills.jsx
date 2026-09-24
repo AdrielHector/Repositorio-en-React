@@ -1,9 +1,9 @@
-const habilidades = ["HTML", "CSS", "JavaScript", "C#", "SQL", "Git"];
+const habilidades = ["HTML", "CSS", "JavaScript", "C#", "MySQL", "Git"];
 
 const Skills = () => {
   return (
     <section id="habilidades">
-      <h2>habilidades</h2>
+      <h2>Habilidades</h2>
       <ul>
         {habilidades.map((habilidad) => (
           <li key={habilidad}>{habilidad}</li>
