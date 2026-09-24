@@ -7,8 +7,8 @@ const Mainhome = ({proyectos}) => {
   return (
     <main>
       <Hero
-        saludo="hola!"
-        descripcion="Soy Adriel, estudiante de programación. Me gusta resolver problemas y aprender haciendo."
+        saludo="Hola!"
+        descripcion="Soy Adriel, estudiante de programación. Me gusta resolver problemas y aprender haciendo.🥱"
       />
       <Experience />
       <Skills/>
