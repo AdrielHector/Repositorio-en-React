@@ -12,6 +12,7 @@ const Header = ({ nombre, apellido, profesion, especializacion }) => {
         <li><a href="#inicio">inicio</a></li>
         <li><a href="#experiencia">experiencia</a></li>
         <li><a href="#proyectos">proyectos</a></li>
+        <li><a href="#habilidades">habilidades</a></li>
       </ul>
     </header>
   );
