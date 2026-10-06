@@ -2,10 +2,11 @@ import Hero from "./Hero";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Skills from "./Skills";
-
+import Mainpracticas from "./Practicas/Mainpracticas";
 const Mainhome = ({proyectos}) => {
+   
   return (
-    <main>
+    <div>
       <Hero
         saludo="Hola!"
         descripcion="Soy Adriel, estudiante de programación. Me gusta resolver problemas y aprender haciendo.🥱"
@@ -13,7 +14,10 @@ const Mainhome = ({proyectos}) => {
       <Experience />
       <Skills/>
       <Projects proyectos= {proyectos} />
-    </main>
+      <Mainpracticas/>
+      
+    </div>
+
   );
 };
 

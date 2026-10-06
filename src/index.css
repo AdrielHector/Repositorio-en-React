@@ -279,3 +279,97 @@ footer {
 #habilidades li:hover {
     border-color: #6c63ff;
     color: #6c63ff; }
+
+/* Prácticas */
+
+#practicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    align-items: stretch;
+}
+
+/* Título de la sección: ocupa toda la fila */
+#practicas > h2 {
+    grid-column: 1 / -1;
+}
+
+/* Tarjetas */
+#practicas .practica {
+    background: #1a1a1a;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 25px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+#practicas .practica:hover {
+    transform: translateY(-5px);
+    border-color: #6c63ff;
+}
+
+/* Título de cada tarjeta (anula el subrayado del título de sección) */
+#practicas .practica h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #6c63ff;
+}
+
+#practicas .practica h2::after {
+    display: none;
+}
+
+/* Títulos y textos dentro de los componentes */
+#practicas .practica h1 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#practicas .practica h3,
+#practicas .practica h4 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#practicas .practica p,
+#practicas .practica li {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+#practicas .practica ul {
+    padding-left: 1.2rem;
+}
+
+/* Botones (Contador y otros) */
+#practicas button {
+    margin: 8px 8px 0 0;
+    padding: 8px 18px;
+    background-color: transparent;
+    color: #6c63ff;
+    border: 1px solid #6c63ff;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#practicas button:hover {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+/* Responsive: 2 por fila en tablet, 1 en celular */
+@media (max-width: 900px) {
+    #practicas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #practicas {
+        grid-template-columns: 1fr;
+    }
+}

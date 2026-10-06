@@ -3,6 +3,7 @@ import Mainhome from "../components/Mainhome";
 import Footer from "../components/Footer";
 
 const Home = () => {
+  
   return (
     <div >
       <Header
