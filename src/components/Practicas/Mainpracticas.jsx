@@ -5,6 +5,11 @@ import Saludo from "./Saludo";
 import UserCard from "../UserCard";
 import Alumno from "./Alumno";
 import Tareas from "./Tarea"
+import ContadorR from "./ContadorR";
+import Colores from "./Colores";
+import Carrito from "./Carrito";
+import Post from "./Post";
+import ContadorUseEffect from "./ContadorUseEffect";
  const Mainpracticas = () => {
 
 const persona =  {
@@ -18,9 +23,9 @@ const persona =  {
 ] ;
 
     const productos = [
-  { id: 1, nombre: "Mouse ", precio: 15000 },
-  { id: 2, nombre: "Teclado ", precio: 25000 },
-  { id: 3, nombre: "Monitor ", precio: 180000 }
+  { id: 1, nombre: "Mouse", precio: 15000 },
+  { id: 2, nombre: "Teclado", precio: 25000 },
+  { id: 3, nombre: "Monitor", precio: 180000 }
 ];
    const alumnos = [
   { nombre: "Juan", edad: 20, nota: 8.5 },
@@ -64,7 +69,30 @@ const persona =  {
         <h2>Tareas</h2>
         <Tareas tareas={tareas}/>
       </div>
+      <div className="practica">
+        <h2>Contador con useState</h2>
+        <ContadorR inicial={10} />
+      </div>
+      <div className="practica">
+        <h2>Colores</h2>
+        <Colores colorinicial="⚪"/>
+      </div>
+    <div className="practica">
+      <h2>Carrito de compras</h2>
+      <Carrito productos={productos} />
+    </div>
+    <div className="practica">
+      <h2>Post</h2>
+      <Post titulo="Mi primer post" 
+      contenido="Este es el contenido de mi primer post" 
+      autor="Juan Perez" />
+    </div>
+      <div className="practica">
+      <h2>Contador con useEffect</h2>
+      <ContadorUseEffect />
+    </div>
     
+   
   </section>
   </div>
 );
