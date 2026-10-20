@@ -10,6 +10,10 @@ import Colores from "./Colores";
 import Carrito from "./Carrito";
 import Post from "./Post";
 import ContadorUseEffect from "./ContadorUseEffect";
+import UseNombre from "./UseNombre";
+import Reloj from "./Reloj";
+import Buscador from "./Buscador";
+
  const Mainpracticas = () => {
 
 const persona =  {
@@ -91,8 +95,20 @@ const persona =  {
       <h2>Contador con useEffect</h2>
       <ContadorUseEffect />
     </div>
-    
-   
+    <div className="practica">
+      <h2>Nombre</h2>
+      <UseNombre />
+    </div>
+    <div className ="practica">
+      <h2> Reloj </h2>
+      <Reloj/>
+
+    </div>
+    <div className ="practica">
+<h2> Busqueda </h2>
+<Buscador productos={productos}/>
+
+    </div>
   </section>
   </div>
 );
