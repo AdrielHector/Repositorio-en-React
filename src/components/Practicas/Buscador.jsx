@@ -6,7 +6,7 @@ const Buscador = ({productos}) => {
 const [busqueda,setBusqueda] = useState ("");
 
 const handleChange = (e) =>{ 
-
+    
     setBusqueda(e.target.value)}
 
     const filtrados = productos.filter((p) =>
